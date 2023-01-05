@@ -1,0 +1,101 @@
+
+
+<head>
+
+        <meta charset="UTF-8">
+        <meta viewport="width=device-width, initial-scale=1.0">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+
+        <script src = timer.js defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
+  
+        <link rel= "stylesheet" href="reset.css"/>
+        <link rel ="stylesheet" href = "layout2.css"/>
+        <link rel = "stylesheet" href = "styles2.css"/>
+        <title>Contact</title>
+        </head>
+
+</head>
+
+
+
+    
+
+
+<body>
+    
+
+
+    <header>
+        <h1>Contact</h1>
+        <br>
+        <nav class = "horizontal">
+            <ul id = "link-list">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- need to add validation and alignment  -->
+    <h2 id ="contact-title" style = "text-align: center; font-size: xx-large;">Want to Know More?</h2>
+    <br>
+    <p style=" font-size: larger; text-align: center;">If you're interested in learning more about dolphins,
+         leave a message and we will email you regularly and incessently!
+    </p>
+    <br>
+<form action="mailto:mancusj01@mail.buffalostate.edu" method="post" enctype="text/plain" name = "email-form">
+    <fieldset style="text-align: center; width: 50%; margin: 0 auto; border: 1px solid black;">
+        <legend>Contact Form</legend>
+        <div>
+          <label for="email" style="padding-left: 10%;">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name">
+        </div>
+        <div>
+          <label for="telephone">Telephone:</label>
+          <input type="tel" id="telephone" name="telephone">
+        </div>
+        <div>
+          <input type="checkbox" id="subscribe" name="subscribe">
+          <label for="subscribe">Subscribe to emails?</label>
+        </div>
+        <div>
+          <input type="radio" id="agree" name="terms" value="agree">
+          <label for="agree">Agree</label>
+          <input type="radio" id="disagree" name="terms" value="disagree">
+          <label for="disagree">Disagree</label>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" cols="50"></textarea>
+        </div>
+        <div>
+            <button type="submit" id = "submit-button" style="align-items: center;" onclick="handleSubmit.js">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+        
+
+
+</main>
+<footer>
+    <p>© 2022 Joseph Mancuso - All Rights Reserved</p>
+    <div id="currentTime">
+        <!-- <span id = "date">11/22/2022</span> -->
+        <span id = "clock"> 11:25:15 PM</span>
+    </div> 
+</footer>
+</body>

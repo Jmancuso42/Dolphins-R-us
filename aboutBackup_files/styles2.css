@@ -1,0 +1,135 @@
+:root{
+
+    /* --background-color:background: rgb(255,255,255); */
+    /* --background: radial-gradient(circle, rgba(255,255,255,1) 68%, rgba(253,253,253,1) 82%, rgba(200,200,200,1) 100%); */
+    /* --theme-blue: #3399FF;
+    --theme-orange: #FF9933;
+    --theme-white: #FFFFFF;
+    --theme-black: #000000;
+    --theme-gray: #999999;
+    --theme-dark-gray: #333333;  */
+
+    --theme-green:#E0ECE4;
+    --theme-cream: #F7F2E7;
+    --theme-light-grey:#D8D3CD;
+    --theme-dark-grey:#797a7e;
+
+
+    --theme-white: #FFFFFF;
+    --theme-cerulean: #4484ce;
+    --theme-aluminum: #d9d9d9;
+    --theme-light: #f7c331;
+    --theme-tangerine:#f19f4d;
+
+
+
+}
+/* All */
+
+    body{
+        font-family: "Poppins", sans-serif;
+        background-color: var(--theme-white);
+        
+    }
+
+    header{
+        background-color: var(--theme-white); 
+        color:var(--theme-cerulean);
+        text-align: center;
+    }
+
+    header > h1{
+     
+        color: var(--theme-dark-grey);
+        border: #4484ce;
+        border-style: solid;
+        font-size: 2.5rem;
+        font-weight: 800;
+        border-width: 20px;
+
+    }
+
+    nav ul{
+        background-color: var(--theme-white);
+        font-size: 1.3rem;
+    }
+
+    nav ul li{
+        background-color: var(--theme-light);
+
+    }
+    nav ul li:hover{
+        background-color: var(--theme-light-grey);
+        transition: 0.5s;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:black;
+        letter-spacing: 1px;
+        
+
+    }
+
+    aside{
+
+        background-color: white;
+        
+    }
+
+    /* Mobile */
+@media only screen and (max-width: 600px) {
+
+  
+    html{    
+        background-color: var(--theme-white);
+
+        
+    }
+    body{
+        background-color: var(--theme-white);
+    
+    
+    }
+
+
+    nav ul{
+        list-style: none;
+
+    }
+
+    nav ul li{
+        font-size: 1.5em;
+        font-weight: 500;
+        border-radius: 50px;
+        border-bottom: 2px solid var(--theme-light);
+    }
+
+}
+    
+
+    /* desktop */
+
+    @media only screen and (min-width: 600px){
+     
+
+        nav ul li> a {
+            text-decoration: none;
+            font-size: 1.4rem;
+
+        }
+
+        nav ul li{
+            border-radius: 50px;
+        }
+
+        aside{
+            background-color: var(--theme-light);
+            border-radius: 8px;
+            
+
+        }
+
+
+
+
+    }

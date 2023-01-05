@@ -1,0 +1,283 @@
+@import url(styles.css);
+
+/* all devices */
+
+
+body{ 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:5px;
+    line-height: 1.3rem;
+
+}   
+
+body > text{
+    line-height: 1.3rem;
+}
+
+header{
+    width: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+
+header > h1{
+    padding:20px;
+    margin: 10px;
+}
+
+video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#picture{
+    display:flex;
+        margin:5px;
+        padding:5px;
+        max-width:95%;
+        height: auto;
+        border-radius: 10px;
+    }
+nav ul li {
+    text-align: center;
+    padding: 5px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+/* ------------------ */
+fieldset{
+    margin:auto;
+    align-items: center;
+    border: 1px solid #000000;
+}
+
+fieldset div{
+    margin: 10px;
+}
+
+fieldset input,fieldset textarea,fieldset {
+    text-align: center;
+    margin: 8px 0;
+    
+}
+
+
+
+/* table styling */
+table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    vertical-align: middle;
+}
+  th {
+    font-weight: bold;
+  }
+
+
+
+
+/* -------- */
+
+
+.content{
+    display:flex;
+    padding: 5px;
+
+
+
+}
+
+
+
+footer{
+    text-align: left;
+    padding: 5px;
+    font-size: medium;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+}
+
+/* mobile devices   */
+
+@media only screen and (max-width:700px){
+    
+    h1{
+        line-height: 1;
+    }
+    /* Table  */
+    table {
+        border: 0;
+      }
+    
+      table caption {
+        font-size: 1.3em;
+      }
+      
+      table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      
+      td img{
+        width:200px;
+      }
+
+      table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+      }
+      
+      table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: center;
+      }
+      
+      table td::before {
+
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      table td:last-child {
+        border-bottom: 0;
+      }
+      /* end Table */
+    
+    
+    body{
+
+        width: 95%;
+          
+    }
+        
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+
+    nav ul li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        margin-right: 0;
+        padding:5px;
+        line-height: 1.2em;
+
+    }
+    
+
+    aside{
+        display: none;
+        padding-top: 5px;    
+    }
+
+ 
+    header,footer,main{
+        flex: 600px 1 1; 
+    }
+
+
+
+}
+
+
+
+
+/* desktop devices */
+
+@media only screen and (min-width: 701px){
+
+    body{
+        width: 90%;
+        min-width:640px;
+        max-width: 960px;
+    }
+
+    aside{
+        align-items: center;
+        text-align: center;
+        font-size: 9pt;
+        padding: 10px;
+        margin: 5px;
+        margin-top: 10px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex:1;
+        flex-shrink: ;
+        border: 1px solid ;
+
+    }
+
+    nav {
+        padding-top: 5px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li{
+        flex: 1 1 100px;
+        line-height: 3;
+    }
+
+    table{
+        width: 90%;
+    }
+
+    td{
+        text-align: center;
+    }
+    td img{
+        max-width: 300px;
+    }
+
+    main{
+
+        flex: 4 1 400px;
+    }
+
+    #dolphin-extra > p{
+        flex:20%;
+
+    }
+
+   
+    header,footer {
+        flex:1 1 600px;
+    }
+
+
+
+
+}
